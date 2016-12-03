@@ -16,7 +16,7 @@ namespace WcfCalculatorService
         public double Substract(double a, double b)
         {
             double result = a - b;
-            CheckResult(nameof(Add), result);
+            CheckResult(nameof(Substract), result);
 
             return result;
         }
@@ -24,36 +24,23 @@ namespace WcfCalculatorService
         public double Multiply(double a, double b)
         {
             double result =  a * b;
-            CheckResult(nameof(Add), result);
+            CheckResult(nameof(Multiply), result);
 
             return result;
         }
 
         public double Divide(double a, double b)
         {
-            if (b == 0d)
-            {
-                CalculationFault faut = new CalculationFault("Failed Divide : second parameter is zero.");
-                throw new FaultException<CalculationFault>(faut);
-            }
-               
-
             double result = a/b;
-            CheckResult(nameof(Add), result);
+            CheckResult(nameof(Divide), result);
         
             return result;
         }
 
         public double Sqrt(double a)
         {
-            if (a < 0)
-            {
-                CalculationFault faut = new CalculationFault("Failed Sqrt : parameter is less than zero.");
-                throw new FaultException<CalculationFault>(faut);
-            }
-
             double result =  Math.Sqrt(a);
-            CheckResult(nameof(Add), result);
+            CheckResult(nameof(Sqrt), result);
 
             return result;
         }

@@ -10,7 +10,7 @@ namespace WcfCalculatorService
 
         public CalculationFault(string message)
         {
-            this.Message = message;
+            Message = message;
         }
     }
 }
