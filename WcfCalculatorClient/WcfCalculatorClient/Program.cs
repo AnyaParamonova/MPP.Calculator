@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ServiceModel;
 using WcfCalculatorClient.CalculatorServiceReference;
 
 namespace WcfCalculatorClient
@@ -8,7 +9,14 @@ namespace WcfCalculatorClient
         static void Main(string[] args)
         {
             CalculatorClient client = new CalculatorClient();
-            Console.WriteLine(client.Sqrt(45));
+            try
+            {
+                Console.WriteLine(client.Sqrt(-9));
+            }
+            catch (FaultException<CalculationFault> fault)
+            {
+                Console.WriteLine(fault.Detail.Message);
+            }
             client.Close();
             Console.ReadLine();
         }

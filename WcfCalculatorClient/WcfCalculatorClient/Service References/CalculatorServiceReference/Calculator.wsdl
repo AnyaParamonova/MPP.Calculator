@@ -134,6 +134,25 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
+  <wsp:Policy wsu:Id="WSHttpBinding_ICalculator_Add_CalculationFaultFault_Fault">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body />
+          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body />
+        </sp:EncryptedParts>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
   <wsp:Policy wsu:Id="WSHttpBinding_ICalculator_Substract_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
@@ -154,6 +173,25 @@
     </wsp:ExactlyOne>
   </wsp:Policy>
   <wsp:Policy wsu:Id="WSHttpBinding_ICalculator_Substract_output_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body />
+          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body />
+        </sp:EncryptedParts>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="WSHttpBinding_ICalculator_Substract_CalculationFaultFault_Fault">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -210,6 +248,25 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
+  <wsp:Policy wsu:Id="WSHttpBinding_ICalculator_Multiply_CalculationFaultFault_Fault">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body />
+          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body />
+        </sp:EncryptedParts>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
   <wsp:Policy wsu:Id="WSHttpBinding_ICalculator_Divide_Input_policy">
     <wsp:ExactlyOne>
       <wsp:All>
@@ -230,6 +287,25 @@
     </wsp:ExactlyOne>
   </wsp:Policy>
   <wsp:Policy wsu:Id="WSHttpBinding_ICalculator_Divide_output_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body />
+          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body />
+        </sp:EncryptedParts>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="WSHttpBinding_ICalculator_Divide_CalculationFaultFault_Fault">
     <wsp:ExactlyOne>
       <wsp:All>
         <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
@@ -286,9 +362,29 @@
       </wsp:All>
     </wsp:ExactlyOne>
   </wsp:Policy>
+  <wsp:Policy wsu:Id="WSHttpBinding_ICalculator_Sqrt_CalculationFaultFault_Fault">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:SignedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body />
+          <sp:Header Name="To" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="From" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="FaultTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="ReplyTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="MessageID" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="RelatesTo" Namespace="http://www.w3.org/2005/08/addressing" />
+          <sp:Header Name="Action" Namespace="http://www.w3.org/2005/08/addressing" />
+        </sp:SignedParts>
+        <sp:EncryptedParts xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <sp:Body />
+        </sp:EncryptedParts>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
   <wsdl:types>
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
       <xsd:import schemaLocation="http://localhost:49723/Calculator.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49723/Calculator.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfCalculatorService" />
       <xsd:import schemaLocation="http://localhost:49723/Calculator.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
     </xsd:schema>
   </wsdl:types>
@@ -298,11 +394,17 @@
   <wsdl:message name="ICalculator_Add_OutputMessage">
     <wsdl:part name="parameters" element="tns:AddResponse" />
   </wsdl:message>
+  <wsdl:message name="ICalculator_Add_CalculationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WcfCalculatorService" name="detail" element="q1:CalculationFault" />
+  </wsdl:message>
   <wsdl:message name="ICalculator_Substract_InputMessage">
     <wsdl:part name="parameters" element="tns:Substract" />
   </wsdl:message>
   <wsdl:message name="ICalculator_Substract_OutputMessage">
     <wsdl:part name="parameters" element="tns:SubstractResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICalculator_Substract_CalculationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/WcfCalculatorService" name="detail" element="q2:CalculationFault" />
   </wsdl:message>
   <wsdl:message name="ICalculator_Multiply_InputMessage">
     <wsdl:part name="parameters" element="tns:Multiply" />
@@ -310,11 +412,17 @@
   <wsdl:message name="ICalculator_Multiply_OutputMessage">
     <wsdl:part name="parameters" element="tns:MultiplyResponse" />
   </wsdl:message>
+  <wsdl:message name="ICalculator_Multiply_CalculationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/WcfCalculatorService" name="detail" element="q3:CalculationFault" />
+  </wsdl:message>
   <wsdl:message name="ICalculator_Divide_InputMessage">
     <wsdl:part name="parameters" element="tns:Divide" />
   </wsdl:message>
   <wsdl:message name="ICalculator_Divide_OutputMessage">
     <wsdl:part name="parameters" element="tns:DivideResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICalculator_Divide_CalculationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/WcfCalculatorService" name="detail" element="q4:CalculationFault" />
   </wsdl:message>
   <wsdl:message name="ICalculator_Sqrt_InputMessage">
     <wsdl:part name="parameters" element="tns:Sqrt" />
@@ -322,26 +430,34 @@
   <wsdl:message name="ICalculator_Sqrt_OutputMessage">
     <wsdl:part name="parameters" element="tns:SqrtResponse" />
   </wsdl:message>
+  <wsdl:message name="ICalculator_Sqrt_CalculationFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/WcfCalculatorService" name="detail" element="q5:CalculationFault" />
+  </wsdl:message>
   <wsdl:portType name="ICalculator">
     <wsdl:operation name="Add">
       <wsdl:input wsaw:Action="http://tempuri.org/ICalculator/Add" message="tns:ICalculator_Add_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ICalculator/AddResponse" message="tns:ICalculator_Add_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICalculator/AddCalculationFaultFault" name="CalculationFaultFault" message="tns:ICalculator_Add_CalculationFaultFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="Substract">
       <wsdl:input wsaw:Action="http://tempuri.org/ICalculator/Substract" message="tns:ICalculator_Substract_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ICalculator/SubstractResponse" message="tns:ICalculator_Substract_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICalculator/SubstractCalculationFaultFault" name="CalculationFaultFault" message="tns:ICalculator_Substract_CalculationFaultFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="Multiply">
       <wsdl:input wsaw:Action="http://tempuri.org/ICalculator/Multiply" message="tns:ICalculator_Multiply_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ICalculator/MultiplyResponse" message="tns:ICalculator_Multiply_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICalculator/MultiplyCalculationFaultFault" name="CalculationFaultFault" message="tns:ICalculator_Multiply_CalculationFaultFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="Divide">
       <wsdl:input wsaw:Action="http://tempuri.org/ICalculator/Divide" message="tns:ICalculator_Divide_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ICalculator/DivideResponse" message="tns:ICalculator_Divide_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICalculator/DivideCalculationFaultFault" name="CalculationFaultFault" message="tns:ICalculator_Divide_CalculationFaultFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="Sqrt">
       <wsdl:input wsaw:Action="http://tempuri.org/ICalculator/Sqrt" message="tns:ICalculator_Sqrt_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ICalculator/SqrtResponse" message="tns:ICalculator_Sqrt_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICalculator/SqrtCalculationFaultFault" name="CalculationFaultFault" message="tns:ICalculator_Sqrt_CalculationFaultFault_FaultMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="WSHttpBinding_ICalculator" type="tns:ICalculator">
@@ -357,6 +473,10 @@
         <wsp:PolicyReference URI="#WSHttpBinding_ICalculator_Add_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
+      <wsdl:fault name="CalculationFaultFault">
+        <wsp:PolicyReference URI="#WSHttpBinding_ICalculator_Add_CalculationFaultFault_Fault" />
+        <soap12:fault use="literal" name="CalculationFaultFault" namespace="" />
+      </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="Substract">
       <soap12:operation soapAction="http://tempuri.org/ICalculator/Substract" style="document" />
@@ -368,6 +488,10 @@
         <wsp:PolicyReference URI="#WSHttpBinding_ICalculator_Substract_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
+      <wsdl:fault name="CalculationFaultFault">
+        <wsp:PolicyReference URI="#WSHttpBinding_ICalculator_Substract_CalculationFaultFault_Fault" />
+        <soap12:fault use="literal" name="CalculationFaultFault" namespace="" />
+      </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="Multiply">
       <soap12:operation soapAction="http://tempuri.org/ICalculator/Multiply" style="document" />
@@ -379,6 +503,10 @@
         <wsp:PolicyReference URI="#WSHttpBinding_ICalculator_Multiply_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
+      <wsdl:fault name="CalculationFaultFault">
+        <wsp:PolicyReference URI="#WSHttpBinding_ICalculator_Multiply_CalculationFaultFault_Fault" />
+        <soap12:fault use="literal" name="CalculationFaultFault" namespace="" />
+      </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="Divide">
       <soap12:operation soapAction="http://tempuri.org/ICalculator/Divide" style="document" />
@@ -390,6 +518,10 @@
         <wsp:PolicyReference URI="#WSHttpBinding_ICalculator_Divide_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
+      <wsdl:fault name="CalculationFaultFault">
+        <wsp:PolicyReference URI="#WSHttpBinding_ICalculator_Divide_CalculationFaultFault_Fault" />
+        <soap12:fault use="literal" name="CalculationFaultFault" namespace="" />
+      </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="Sqrt">
       <soap12:operation soapAction="http://tempuri.org/ICalculator/Sqrt" style="document" />
@@ -401,6 +533,10 @@
         <wsp:PolicyReference URI="#WSHttpBinding_ICalculator_Sqrt_output_policy" />
         <soap12:body use="literal" />
       </wsdl:output>
+      <wsdl:fault name="CalculationFaultFault">
+        <wsp:PolicyReference URI="#WSHttpBinding_ICalculator_Sqrt_CalculationFaultFault_Fault" />
+        <soap12:fault use="literal" name="CalculationFaultFault" namespace="" />
+      </wsdl:fault>
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="Calculator">

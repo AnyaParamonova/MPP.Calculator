@@ -62,6 +62,9 @@
     <None Include="Service References\CalculatorServiceReference\Calculator1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\CalculatorServiceReference\Calculator2.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

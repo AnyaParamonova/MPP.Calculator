@@ -22,6 +22,7 @@
     <MetadataSource Address="http://localhost:49723/Calculator.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
+    <MetadataFile FileName="Calculator2.xsd" MetadataType="Schema" ID="7eebac5d-1ca9-4e31-9cd0-8642a03c8f64" SourceId="1" SourceUrl="http://localhost:49723/Calculator.svc?xsd=xsd2" />
     <MetadataFile FileName="Calculator.xsd" MetadataType="Schema" ID="1c78ff40-a461-4072-97b4-7585b97ec4a9" SourceId="1" SourceUrl="http://localhost:49723/Calculator.svc?xsd=xsd1" />
     <MetadataFile FileName="Calculator.wsdl" MetadataType="Wsdl" ID="d274ed8e-06dc-4785-8116-b8858e60cdc8" SourceId="1" SourceUrl="http://localhost:49723/Calculator.svc?wsdl" />
     <MetadataFile FileName="Calculator1.xsd" MetadataType="Schema" ID="93a461ae-f7cb-4336-b6a2-8b48978e2b20" SourceId="1" SourceUrl="http://localhost:49723/Calculator.svc?xsd=xsd0" />

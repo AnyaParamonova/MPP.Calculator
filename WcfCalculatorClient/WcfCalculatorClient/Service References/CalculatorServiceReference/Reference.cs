@@ -9,37 +9,89 @@
 //------------------------------------------------------------------------------
 
 namespace WcfCalculatorClient.CalculatorServiceReference {
+    using System.Runtime.Serialization;
+    using System;
     
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="CalculationFault", Namespace="http://schemas.datacontract.org/2004/07/WcfCalculatorService")]
+    [System.SerializableAttribute()]
+    public partial class CalculationFault : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MessageField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Message {
+            get {
+                return this.MessageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
+                    this.MessageField = value;
+                    this.RaisePropertyChanged("Message");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="CalculatorServiceReference.ICalculator")]
     public interface ICalculator {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Add", ReplyAction="http://tempuri.org/ICalculator/AddResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(WcfCalculatorClient.CalculatorServiceReference.CalculationFault), Action="http://tempuri.org/ICalculator/AddCalculationFaultFault", Name="CalculationFault", Namespace="http://schemas.datacontract.org/2004/07/WcfCalculatorService")]
         double Add(double a, double b);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Add", ReplyAction="http://tempuri.org/ICalculator/AddResponse")]
         System.Threading.Tasks.Task<double> AddAsync(double a, double b);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Substract", ReplyAction="http://tempuri.org/ICalculator/SubstractResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(WcfCalculatorClient.CalculatorServiceReference.CalculationFault), Action="http://tempuri.org/ICalculator/SubstractCalculationFaultFault", Name="CalculationFault", Namespace="http://schemas.datacontract.org/2004/07/WcfCalculatorService")]
         double Substract(double a, double b);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Substract", ReplyAction="http://tempuri.org/ICalculator/SubstractResponse")]
         System.Threading.Tasks.Task<double> SubstractAsync(double a, double b);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Multiply", ReplyAction="http://tempuri.org/ICalculator/MultiplyResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(WcfCalculatorClient.CalculatorServiceReference.CalculationFault), Action="http://tempuri.org/ICalculator/MultiplyCalculationFaultFault", Name="CalculationFault", Namespace="http://schemas.datacontract.org/2004/07/WcfCalculatorService")]
         double Multiply(double a, double b);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Multiply", ReplyAction="http://tempuri.org/ICalculator/MultiplyResponse")]
         System.Threading.Tasks.Task<double> MultiplyAsync(double a, double b);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Divide", ReplyAction="http://tempuri.org/ICalculator/DivideResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(WcfCalculatorClient.CalculatorServiceReference.CalculationFault), Action="http://tempuri.org/ICalculator/DivideCalculationFaultFault", Name="CalculationFault", Namespace="http://schemas.datacontract.org/2004/07/WcfCalculatorService")]
         double Divide(double a, double b);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Divide", ReplyAction="http://tempuri.org/ICalculator/DivideResponse")]
         System.Threading.Tasks.Task<double> DivideAsync(double a, double b);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Sqrt", ReplyAction="http://tempuri.org/ICalculator/SqrtResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(WcfCalculatorClient.CalculatorServiceReference.CalculationFault), Action="http://tempuri.org/ICalculator/SqrtCalculationFaultFault", Name="CalculationFault", Namespace="http://schemas.datacontract.org/2004/07/WcfCalculatorService")]
         double Sqrt(double a);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICalculator/Sqrt", ReplyAction="http://tempuri.org/ICalculator/SqrtResponse")]
