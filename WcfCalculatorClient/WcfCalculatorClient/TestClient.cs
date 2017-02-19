@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using WcfCalculatorClient.CalculatorServiceReference;
 
@@ -32,12 +33,7 @@ namespace WcfCalculatorClient
 
             try
             {
-                if (args.Length == 1)
-                {
-                    return PerformCalculation(operation, args[0]);
-                }
-
-                return PerformCalculation(operation, args[0], args[1]);
+                return PerformCalculation(operation, args.Cast<object>().ToArray());
             }
             catch (TargetInvocationException e)
             {
@@ -45,14 +41,9 @@ namespace WcfCalculatorClient
             }
         }
 
-        private double PerformCalculation(string operation, double arg)
+        private double PerformCalculation(string operation, params object[] args)
         {
-            return (double) operations[operation].DynamicInvoke(arg);
-        }
-
-        private double PerformCalculation(string operation, double arg, double arg1)
-        {
-            return (double)operations[operation].DynamicInvoke(arg, arg1);
+            return (double) operations[operation].DynamicInvoke(args);
         }
 
         public int GetArgumentNumber(string operation)
